@@ -1,0 +1,36 @@
+<!-- profile.html -->
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h1>User Bio</h1>
+                <div class="card">
+                    <div class="card-body">
+                        <!-- Profile Photo -->
+                            <img src="{% static 'images/mickey.png' %}" class="rounded-circle img-thumbnail mb-3" width="150" height="150" alt="Default Profile Photo">
+                        
+                        <!-- Username and Bio -->
+                        <h4>Mickey Mouse</h4>
+                        <p>Mickey Mouse is one of the most iconic animated characters in history, created by Walt Disney and 
+                            Ub Iwerks in 1928. He first appeared in the short film Steamboat Willie, which was groundbreaking 
+                            as one of the first cartoons with synchronized sound.Mickey quickly became a symbol of the Walt Disney Company and is known worldwide.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
